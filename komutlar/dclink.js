@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
     const embed = new EmbedBuilder()
     .setTitle("Sunucu Davet")
     .setDescription(`**[KATILMAK İÇİN TIKLA](https://discord.gg/zZ4BY8uVZ4)**\n`)
-    .setColor("#007fff")
+    .setColor("#ff0000")
     .setTimestamp()
     return message.channel.send({embeds : [embed]});
 
