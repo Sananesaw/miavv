@@ -8,7 +8,7 @@ exports.run = async (client, message, args) => {
     if(args[0] === "Genel" || args[0] === "genel" || args[0] === "General" || args[0] === "general") {
               let Genel = new Discord.EmbedBuilder()
               .setAuthor({ name: 'Genel', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/3ZSpg93QuZ' })
-              .setColor('#2667FF')
+              .setColor('#ff0000')
               .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Genel').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
              .setFooter({ text: `Bu komutu kullanan kullanıcı ${message.author.tag}` , iconURL: `${message.author.displayAvatarURL()}` });
         return message.channel.send({embeds : [Genel]});
@@ -20,7 +20,7 @@ exports.run = async (client, message, args) => {
       if(args[0] === "Sunucu" || args[0] === "sunucu") {
               let Sunucu = new Discord.EmbedBuilder()
               .setAuthor({ name: 'Sunucu', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/3ZSpg93QuZ' })
-              .setColor('#2667FF')
+              .setColor('#ff0000')
               .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Sunucu').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
              .setFooter({ text: `Bu komutu kullanan kullanıcı ${message.author.tag}` , iconURL: `${message.author.displayAvatarURL()}` });
                    return message.channel.send({embeds : [Sunucu]});
@@ -33,7 +33,7 @@ exports.run = async (client, message, args) => {
   if(args[0] === "Eğlence" || args[0] === "eğlence" || args[0] === "Fun" || args[0] === "fun") {
    let Eğlence = new Discord.EmbedBuilder()
    .setAuthor({ name: 'Eğlence', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/3ZSpg93QuZ' })
-   .setColor('#2667FF')
+   .setColor('#ff0000')
    .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Eğlence').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
   .setFooter({ text: `Bu komutu kullanan kullanıcı ${message.author.tag}` , iconURL: `${message.author.displayAvatarURL()}` });
         return message.channel.send({embeds : [Eğlence]});
@@ -45,7 +45,7 @@ exports.run = async (client, message, args) => {
   if(args[0] === "Moderasyon" || args[0] === "moderasyon" || args[0] === "moderation" || args[0] === "Moderation") {
    let Moderasyon = new Discord.EmbedBuilder()
    .setAuthor({ name: 'Moderasyon', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/3ZSpg93QuZ' })
-   .setColor('#2667FF')
+   .setColor('#ff0000')
    .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Moderasyon').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
   .setFooter({ text: `Bu komutu kullanan kullanıcı ${message.author.tag}` , iconURL: `${message.author.displayAvatarURL()}` });
        return message.channel.send({embeds : [Moderasyon]});
@@ -57,29 +57,51 @@ exports.run = async (client, message, args) => {
   if(args[0] === "Sahip" || args[0] === "sahip" ) {
     let Sahip = new Discord.EmbedBuilder()
     .setAuthor({ name: 'Sahip', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/3ZSpg93QuZ' })
-    .setColor('#2667FF')
+    .setColor('#ff0000')
     .setDescription(client.commands.filter(cmd => cmd.conf.kategori === 'Sahip').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n "))
    .setFooter({ text: `Bu komutu kullanan kullanıcı ${message.author.tag}` , iconURL: `${message.author.displayAvatarURL()}` });
 
          return message.channel.send({embeds : [Sahip]});
-              
+
         
                 return;
    }
+
+     //SAHİP KOMUTU
+  if(args[0] === "TümKomutlar" || args[0] === "tümkomutlar" ) {
+    let TümKomutlar = new Discord.EmbedBuilder()
+    .setAuthor({ name: 'Tüm Komutlar', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/3ZSpg93QuZ' })
+    .setColor('#ff0000')
+    .setDescription(
+            `**Genel Komutlar:**\n${client.commands.filter(cmd => cmd.conf.kategori === 'Genel').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n")}\n\n` +
+            `**Eğlence Komutları:**\n${client.commands.filter(cmd => cmd.conf.kategori === 'Eğlence').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n")}\n\n` +
+            `**Moderasyon Komutları:**\n${client.commands.filter(cmd => cmd.conf.kategori === 'Moderasyon').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n")}\n\n` +
+            `**Sunucu Komutları:**\n${client.commands.filter(cmd => cmd.conf.kategori === 'Sunucu').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n")}\n\n` +
+            `**Sahip Komutları:**\n${client.commands.filter(cmd => cmd.conf.kategori === 'Sahip').map(cmd => `:white_small_square: - **${prefix}${cmd.help.name}** ${cmd.help.description}`).join("\n")}`
+        )
+   .setFooter({ text: `Bu komutu kullanan kullanıcı ${message.author.tag}` , iconURL: `${message.author.displayAvatarURL()}` });
+
+         return message.channel.send({embeds : [TümKomutlar]});
+
+        
+                return;
+   }
+
 
 //YARDIM KOMUTU
   
   let embed = new Discord.EmbedBuilder()
   .setAuthor({ name: 'Yardım', iconURL: `${message.author.displayAvatarURL()}`, url: 'https://discord.gg/3ZSpg93QuZ' })
-  .setColor('#FFFB05')
-  .setDescription(`**Örnek Kullanım:** \`${prefix}yardım Kategori\` \n **Örnek:** \`${prefix}yardım Genel\``)
+  .setColor('#ff0000')
+  .setDescription(`**Örnek Kullanım:** \`${prefix}yardım Kategori\` \n **Örnek:** \`${prefix}yardım Eğlence\``)
 	.addFields(
 		{ name: 'Kategoriler', value:'Tüm kategoriler'},
-		{ name: `${prefix}yardım Genel`, value: 'Genel komutlar', inline: false },
-		{ name: `${prefix}yardım Eğlence`, value: 'Eğlence komutları', inline: false },
-    { name: `${prefix}yardım Moderasyon`, value: 'Moderasyon komutları', inline: false },
-		{ name: `${prefix}yardım Sunucu`, value: 'Sunucu komutları', inline: false },
-		{ name: `${prefix}yardım Sahip`, value: 'Sahip komutları', inline: false },
+		{ name: `${prefix}yardım Genel`, value: 'Genel komutlar', inline: true },
+		{ name: `${prefix}yardım Eğlence`, value: 'Eğlence komutları', inline: true },
+    { name: `${prefix}yardım Moderasyon`, value: 'Moderasyon komutları', inline: true },
+		{ name: `${prefix}yardım Sunucu`, value: 'Sunucu komutları', inline: true },
+		{ name: `${prefix}yardım Sahip`, value: 'Sahip komutları', inline: true },
+    { name: `${prefix}yardım TümKomutlar`, value: 'Tüm Komutlar', inline: true },
 
 	)
 
@@ -90,17 +112,18 @@ exports.run = async (client, message, args) => {
   
 }
     
-//EMİRHAN SARAÇ TARAFINDAN YAPILMIŞTIR 2021 DE YENİLENMİŞTİR!
+
 
   exports.conf = {
-    aliases: ['help', 'cmds', 'komutlar','y'], //Komutun farklı yazılışlarla kullanımları
-    permLevel: 0, //Komutun kimler kullanacağını belirtir (bot.js dosyasından en aşağı inerseniz gerekli yeri görürsünüz)
-    kategori: "Genel" //Yardım komutunda hangi kategoride gözükeceğini ayarlarsınız
-
+    aliases: ['help', 'cmds', 'komutlar','y'], 
+    permLevel: 0,
+    kategori: "Genel" 
   };
 
   exports.help = {
-    name: 'yardım',  //adını belirtin (kullanmak için gereken komut) Örneğin Otorol
-    description: 'Komutlar hakkında bilgi verir.', //Komutun açıklaması
-    usage: 'yardım', //Komutun kullanım şekli (örneğin !otorol <@rol> <#kanal>)
+    name: 'yardım',  
+    description: 'Komutlar hakkında bilgi verir.', 
+    usage: 'yardım', 
   };
+
+ 
