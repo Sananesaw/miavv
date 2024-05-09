@@ -6,9 +6,13 @@ message.channel.send(`**${kişi}** adlı kişinin ID numarası: **${kişi.id}** 
 }
 
 exports.conf = {
-  aliases: ["Id", "ıd", "ID"]
-}
+    aliases: ['ıd', 'id'], 
+    permLevel: 4,
+    kategori: "Moderasyon" 
+  };
 
-exports.help = {
-  name: "id"
-}
+  exports.help = {
+    name: 'ıd',  
+    description: 'Kullanıcı Id Verir.', 
+    usage: 'ıd', 
+  };
