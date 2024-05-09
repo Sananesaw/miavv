@@ -30,7 +30,7 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 
-client.login(process.env.token)
+client.login(process.env.TOKEN || ayarlar.token);
 
 const { joinVoiceChannel } = require('@discordjs/voice')
 client.on('ready', () => {
