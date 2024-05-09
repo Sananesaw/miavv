@@ -13,7 +13,7 @@ exports.run = async (client, message, args) => {
   await message.delete();
 
   const mesajat = new Discord.EmbedBuilder()
-    .setColor(Discord.Colors.Blue)
+    .setColor("#ff0000")
     .setDescription(args.slice(0).join(" "));
 
   message.guild.members.cache.map(async (user) => {
@@ -24,9 +24,13 @@ exports.run = async (client, message, args) => {
 };
 
 exports.conf = {
-  aliases: ["dm-duyuru"],
-};
+    aliases: ['dm'], 
+    permLevel: 5,
+    kategori: "Sahip" 
+  };
 
-exports.help = {
-  name: "dm",
-};
+  exports.help = {
+    name: 'dm',  
+    description: 'Dm Mesaj Gönderir.', 
+    usage: 'yardım', 
+  };
