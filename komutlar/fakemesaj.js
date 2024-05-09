@@ -42,9 +42,14 @@ module.exports.run = async (client, message, args) => {
   //-------
 };
 exports.conf = {
-  aliases: ["fakemesaj"],
-};
+    aliases: ['fakemesaj'], 
+    permLevel: 0,
+    kategori: "Eğlence" 
+  };
 
-exports.help = {
-  name: "fakemesaj",
-};
+  exports.help = {
+    name: 'fakemesaj',  
+    description: 'Başkası Adına Mesaj Atar..', 
+    usage: 'fakemesaj', 
+  };
+
