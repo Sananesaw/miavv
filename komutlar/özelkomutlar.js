@@ -14,7 +14,8 @@ module.exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: ["commands"],
-  permLevel: 0
+  permLevel: 5,
+  kategori: "Sahip"
 };
 
 module.exports.help = {
