@@ -20,3 +20,72 @@ client.on("messageCreate", async (message) => {
   }
 
 });
+
+
+
+client.on("messageCreate", async message => {
+
+  let data = [
+    "Burgaz",
+    "burgaz",
+    "BURGAZ"
+  ];
+  if (data.includes(message.content)) {
+    message.reply("**Bizim Orda Rüzgar 12 Ay Tersten Eser !**");
+  }
+  
+  
+  
+  let data1 = [
+    "sa",
+    "Sa",
+    "sA",
+    "SA",
+    "sea",
+    "Sea",
+    "SEA",
+    "selam",
+    "Selam",
+    "SELAM"
+  ];
+  if (data1.includes(message.content)) {
+    message.reply("** Aleyküm selam,  hoş geldin bro ^^**");
+  }
+
+
+
+  let data2 = [
+    "gnydn",
+    "günaydın",
+    "Günaydın",
+    "gunaydin",
+    "gunaydın",
+    "Gunaydın",
+    "güno",
+    "Güno",
+    "guno",
+    "Guno",
+    "Gunaydin"
+  ];
+  if (data2.includes(message.content)) {
+    message.reply("Sanada Günaydın Canım. 😯🌄🌅");
+  }
+
+
+
+  let data3 = [
+    "iyi geceler",
+    "iyi akşamlar",
+    "iyi gclr",
+    "ii geceler",
+    "iyi aksamlar",
+    "Iyi Geceler",
+    "İyi geceler",
+    "ig",
+    "İyi akşamlar"
+  ];
+  if (data3.includes(message.content)) {
+    message.reply("Saol Knka Sanada İyi Geceler. 🌙🌜");
+  }
+
+})
