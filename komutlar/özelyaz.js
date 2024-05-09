@@ -11,7 +11,8 @@ exports.conf = {
   enabled: true,
   guildOnly: false,
   aliases: ['say', 'söyle'],
-  permLevel: 5
+  permLevel: 5,
+  kategori: "Sahip" 
 };
 
 exports.help = {
