@@ -20,10 +20,3 @@ client.on("messageCreate", async (message) => {
   }
 
 });
-
-/*
-############################################################################
-#                           Discord Bot Altyapı v14                         #
-#               https://github.com/EmirhanSarac/discord-altyapi-bot         #
-############################################################################
-*/
