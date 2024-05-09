@@ -42,7 +42,7 @@ function checkDays(date) {
 let sunucu = new Discord.EmbedBuilder()
 .setAuthor({ name: 'Sunucu Bilgi', iconURL: 'https://imgur.com/gallery/pDpw9cq', url: 'https://discord.gg/' })
 .setDescription(`**Sunucu Bilgileri** \nSunucu İsmi: **${guild.name}** \nSunucu ID: **${msg.guild.id}** \nSunucu Sahibi: **${owner}** \nKuruluş Tarihi: **${checkDays(msg.guild.createdAt)}** \nBoost Sayısı: **${msg.guild.premiumSubscriptionCount || '0'}** \n**Üye Bilgileri:** \nToplam Üye: **${humanCount}** \nToplam Bot: **${botCount}** \nRol Sayısı: **${guild.roles.cache.size}** `)
-.setColor('#D2EE07')  
+.setColor('#ff0000')  
 .setFooter({ text: `Bu komutu kullanan kullanıcı ${msg.author.tag}` , iconURL: `${msg.author.displayAvatarURL()}` });
 
      msg.channel.send({embeds : [sunucu]});
