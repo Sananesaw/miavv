@@ -5,7 +5,7 @@ exports.run = async (client, message, args) => {
     const embed = new EmbedBuilder()
     .setDescription(`**[PNG](${user.displayAvatarURL({ dynamic: true, size: 1024 }).replace("webp", "png")}) | [JPG](${user.displayAvatarURL({ dynamic: true, size: 1024 }).replace("webp", "jpg")}) | [WEBP](${user.displayAvatarURL({ dynamic: true, size: 1024 }).replace("webp", "webp")}) | [GIF](${user.displayAvatarURL({ dynamic: true, size: 1024 }).replace("webp", "gif")})**`)
     .setImage(user.displayAvatarURL({ dynamic: true, size: 1024 }))
-    .setColor("#0099ff")
+    .setColor("#ff0000")
     return message.reply({ embeds: [embed]}).catch(err => {})
 
 }
