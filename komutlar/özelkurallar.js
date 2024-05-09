@@ -6,7 +6,7 @@ let üyesayi = message.guild.memberCount;
 let botlar = message.guild.members.cache.filter(m => m.user.bot).size
 let kullanıcılar = üyesayi - botlar
 const embed = new Discord.EmbedBuilder()
-.setColor(Discord.Colors.Blue)
+.setColor("#ff0000")
 .setTimestamp()
 .setDescription(`**SUNUCU KURALLARI**
 
@@ -68,9 +68,14 @@ return message.channel.send({embeds: [embed]})
 }
 
 exports.conf = {
-aliases: [""]
-}
+    aliases: ['kural'], 
+    permLevel: 5,
+    kategori: "Sahip" 
+  };
 
-exports.help = {
-name: "kural"
-}
+  exports.help = {
+    name: 'kural',  
+    description: 'Sunucu Kuralları.', 
+    usage: 'kural', 
+  };
+
