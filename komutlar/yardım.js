@@ -104,10 +104,3 @@ exports.run = async (client, message, args) => {
     description: 'Komutlar hakkında bilgi verir.', //Komutun açıklaması
     usage: 'yardım', //Komutun kullanım şekli (örneğin !otorol <@rol> <#kanal>)
   };
-
-  /*
-############################################################################
-#                           Discord Bot Altyapı v14                         #
-#               https://github.com/EmirhanSarac/discord-altyapi-bot         #
-############################################################################
-*/
