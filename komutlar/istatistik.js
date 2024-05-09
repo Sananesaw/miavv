@@ -32,13 +32,13 @@ exports.run = async (client, message, args) => {
       text: `Bot İstatistik`,
       iconURL: message.member.displayAvatarURL({ dynamic: true }),
     })
-    .setColor(Colors.Blurple);
+    .setColor("#ff0000");
   message.reply({ embeds: [embed] });
 };
 module.exports.conf = {
-aliases: [istatistik],
+aliases: ['istatistik'],
 permLevel: 0, 
-kategori: 'Moderasyon'
+kategori: 'Sunucu'
 };
 
 module.exports.help = {
