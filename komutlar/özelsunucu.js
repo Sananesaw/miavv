@@ -8,7 +8,7 @@ let üyesayi = message.guild.memberCount;
 let botlar = message.guild.members.cache.filter(m => m.user.bot).size
 let kullanıcılar = üyesayi - botlar
 const embed = new Discord.EmbedBuilder()
-.setColor(Discord.Colors.Blue)
+.setColor("#ff0000")
 .setTimestamp()
 .addFields([
 { name: `Toplam Üye`, value: `**${üyesayi}**`, inline:true },
@@ -20,9 +20,13 @@ return message.channel.send({embeds: [embed]})
 }
 
 exports.conf = {
-aliases: [""]
-}
+    aliases: ['toplamüye', 'üye'], 
+    permLevel: 5,
+    kategori: "Sahip" 
+  };
 
-exports.help = {
-name: "sunucubilgi"
-}
+  exports.help = {
+    name: 'toplamüye',  
+    description: 'Toplam Üye Gösterir.', 
+    usage: 'toplamüye', 
+  };
