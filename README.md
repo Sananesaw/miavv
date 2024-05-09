@@ -2,27 +2,10 @@ Bot Altyapı Projesine Hoşgeldin!
 =================
 Merhaba Arkadaşlar Bu Altyapı 2018 Yılında Yapılmış 5 Ekim 2022 Tarihinde İse Gerekli Düzeltmeleri Yapılmıştır. Bu Altyapı Discord.js v14 Sürümünü Artık Desteklemektedir! Kolaylıkla Kullanabilirsiniz!
 
-[Resmi Discord Sunucumuz](https://discord.gg/T2jXbtBjwj)
-
-[Resmi Youtube Kanalımız](https://www.youtube.com/channel/UCVRhrcoG6FOvHGKehYtvKHg?view_as=subscriber)
-
-[Resmi İnstagram Hesabımız](https://www.instagram.com/emirhansarac06/)
+[Resmi Discord Sunucumuz](https://discord.gg/3ZSpg93QuZ)
 
 Diğer Altyapılar!
 =================
-[Müzik Bot Altyapısı](https://youtu.be/V4qOOnSPfwA)
-
-[Ayarlanabilen Emoji ile Rol Verme Altyapısı](https://www.youtube.com/watch?v=AjNbw0wODH8)
-
-[Kayıt Botu Altyapısı](https://www.youtube.com/watch?v=55_OEZ73yd4)
-
-[Davet Botu Altyapısı](https://www.youtube.com/watch?v=drlPG8kgNdQ)
-
-[Captcha Botu Altyapısı](https://www.youtube.com/watch?v=DWxjCc6BuDA)
-
-[Slash Bot Altyapısı](https://www.youtube.com/watch?v=UZABvGw-oww)
-
-[Yönetim Panelli Bot Altyapısı](https://www.youtube.com/watch?v=HMT1UhQXQbA)
 
 Basit Hatalar ve Çözümleri!
 =================
