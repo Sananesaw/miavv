@@ -1,6 +1,5 @@
 const { Client, GatewayIntentBits, Partials } = require("discord.js");
 const ayarlar = require("./ayarlar.json");
-
 const client = new Client({
   intents: [
       GatewayIntentBits.Guilds,
@@ -10,7 +9,12 @@ const client = new Client({
       GatewayIntentBits.DirectMessages,
       GatewayIntentBits.MessageContent
   ],
-  partials: [Partials.Channel, Partials.Message, Partials.User, Partials.GuildMember, Partials.Reaction]
+  partials: [
+    Partials.Channel,
+    Partials.Message, 
+    Partials.User, 
+    Partials.GuildMember, 
+    Partials.Reaction]
 });
 
 module.exports = client;
