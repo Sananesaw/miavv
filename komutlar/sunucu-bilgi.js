@@ -60,10 +60,3 @@ module.exports.help = {
     description: 'Sunucu hakkında bilgi verir.',
     usage: 'sunucu-bilgi'
 };
-
-/*
-############################################################################
-#                           Discord Bot Altyapı v14                         #
-#               https://github.com/EmirhanSarac/discord-altyapi-bot         #
-############################################################################
-*/
