@@ -50,7 +50,7 @@ let sunucu = new Discord.EmbedBuilder()
 }; 
 
 module.exports.conf = {
-aliases: ['sunucubilgi','sb','sunucu'],
+aliases: [sunucub],
 permLevel: 0, 
 kategori: 'Sunucu'
 };
