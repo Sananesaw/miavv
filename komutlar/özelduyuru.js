@@ -18,9 +18,13 @@ message.channel.send({ embeds: [new Discord.EmbedBuilder()
 }
 
 exports.conf = {
-  aliases: []
-}
+    aliases: ['duyuru'], 
+    permLevel: 5,
+    kategori: "Genel" 
+  };
 
-exports.help = {
-  name: 'duyuru'
-}
+  exports.help = {
+    name: 'duyuru',  
+    description: 'Duyuru Gönderir.', 
+    usage: 'duyuru', 
+  };
