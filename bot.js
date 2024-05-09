@@ -26,11 +26,28 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 
-client.login(process.env.TOKEN || ayarlar.token)
+client.login(process.env.token)
 
-/*
-############################################################################
-#                           Discord Bot Altyapı v14                         #
-#               https://github.com/EmirhanSarac/discord-altyapi-bot         #
-############################################################################
-*/
+const { joinVoiceChannel } = require('@discordjs/voice')
+client.on('ready', () => {
+  let channel = client.channels.cache.get("1213841492741857310")
+  
+ 
+
+      const VoiceConnection = joinVoiceChannel({
+          channelId: channel.id,
+          guildId: channel.guild.id,
+          adapterCreator: channel.guild.voiceAdapterCreator
+  });
+})
+
+
+client.on("messageCreate", async (msg) => {
+  const yasak = "420927049939681280";
+
+  const dcskelime = [yasak, "<@" + yasak + ">"];
+  if (dcskelime.some((dcss) => msg.content.includes(dcss))) {
+    msg.reply("Etiketleme Lütfen!");
+    msg.delete();
+  }
+});
