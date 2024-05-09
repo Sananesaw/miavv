@@ -4,7 +4,7 @@ exports.run = async (bot, message, args) => {
 let user = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member
 
 const embed = new Discord.EmbedBuilder()
-.setColor(Discord.Colors.Blue)
+.setColor("#ff0000")
 .setTimestamp()
 .setTitle(user.user.tag)
 .setThumbnail(user.user.displayAvatarURL({ dynamic: true }))
@@ -19,9 +19,14 @@ return message.reply({ embeds : [embed] })
 }
 
 exports.conf = {
-aliases: ['user']
-}
+    aliases: ['profil'], 
+    permLevel: 0,
+    kategori: "Genel" 
+  };
 
-exports.help = {
-name: 'profil'
-}
+  exports.help = {
+    name: 'profil',  
+    description: 'Profil bilgisi verir.', 
+    usage: 'profil', 
+  };
+
