@@ -8,15 +8,14 @@ module.exports.run = async (client, message, args) => {
     }
 }
 
-module.exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ["davet"],
-  permLevel: 0
-};
+exports.conf = {
+    aliases: ['site','link'], 
+    permLevel: 0,
+    kategori: "Genel" 
+  };
 
-module.exports.help = {
-  name: 'site',
-  description: 'Bot Davet',
-  usage: 'komutlar'
-};
+  exports.help = {
+    name: 'site',  
+    description: 'Site Linki Verir.', 
+    usage: 'site', 
+  };
