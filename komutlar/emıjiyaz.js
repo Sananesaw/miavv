@@ -34,7 +34,7 @@ exports.run = function(client, message, args) {
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ['emojiyaz','ey']
+  aliases: ['emojiyaz','ey'],
   permLevel: 0,
   kategori: 'Eğlence'
 };
