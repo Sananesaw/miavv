@@ -11,9 +11,13 @@ exports.run = async (client, message, args) => {
 };
 
 exports.conf = {
-  aliases: [ 'ters-yaz' ]
-};
+    aliases: ['ters-yaz'], 
+    permLevel: 0,
+    kategori: "Eğlence" 
+  };
 
-exports.help = {
-  name: 'ters-yaz'
-};
+  exports.help = {
+    name: 'ters-yaz',  
+    description: 'Yazınızı Tersten Yazar.', 
+    usage: 'ters-yaz', 
+  };
