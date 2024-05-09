@@ -83,7 +83,7 @@ const sistemEmbed = new EmbedBuilder()
 .setDescription(`**${client.user.username}** Botun Sistem Komutlarını Gösterir.
 Komutlar: 
 Liste Ekleyin`)
-.setColor("#0099ff")
+.setColor("#ff0000")
 .setTimestamp()
 await Message.edit({ embeds: [sistemEmbed] }).catch(err => {})
 await button.deferUpdate();
