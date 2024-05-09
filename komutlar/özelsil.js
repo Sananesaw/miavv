@@ -13,8 +13,9 @@ message.channel.send("100 mesaji uzaya fırlattım").then(msg => {
 exports.conf = {
   enabled: true, 
   guildOnly: false, 
-  aliases: [],
-  permLevel: 5 
+  aliases: ['s'],
+  permLevel: 5 ,
+  kategori: "Sahip"
 };
 
 exports.help = {
