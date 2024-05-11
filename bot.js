@@ -2,19 +2,20 @@ const { Client, GatewayIntentBits, Partials } = require("discord.js");
 const ayarlar = require("./ayarlar.json");
 const client = new Client({
   intents: [
-      GatewayIntentBits.Guilds,
-      GatewayIntentBits.GuildMessages,
-      GatewayIntentBits.GuildPresences,
-      GatewayIntentBits.GuildMessageReactions,
-      GatewayIntentBits.DirectMessages,
-      GatewayIntentBits.MessageContent
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.GuildPresences,
+    GatewayIntentBits.GuildMessageReactions,
+    GatewayIntentBits.DirectMessages,
+    GatewayIntentBits.MessageContent,
   ],
   partials: [
     Partials.Channel,
-    Partials.Message, 
-    Partials.User, 
-    Partials.GuildMember, 
-    Partials.Reaction]
+    Partials.Message,
+    Partials.User,
+    Partials.GuildMember,
+    Partials.Reaction,
+  ],
 });
 
 module.exports = client;
