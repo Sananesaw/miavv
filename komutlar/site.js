@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
     try {
-        await message.channel.send(`**:cat: Site Linki [TIKLA](https://miav.vercel.app/)**\n`);
+        await message.channel.send(`**:cat: Site Linki [TIKLA](https://pashaburgaz.vercel.app/)**\n`);
     } catch (e) {
         throw e;
     }
